@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;}
+body{background-color: #222;
+color: aliceblue;
+font-family: system-ui;
+}
+.crud{width: 80%;
+margin: auto;}
+.head{text-align: center;
+margin: 10px;
+text-transform: uppercase;}
+input{width: 100%;
+height: 30px;
+margin: 5px 0;
+background-color: #111;
+padding: 4px;
+border: none;
+color: aliceblue;}
+input:focus{background-color: #000;
+transform: scaleX(1.1);}
+
+.price2 input{ width: 20%;}
+#total{background-color: red; padding: 4px;}
+button{width: 100%;
+background-color: blue;
+padding: 5px;
+border-radius: 20px;
+transition: .5s;}
+button:hover{background-color: rgb(59, 59, 143);letter-spacing: 1px;}
+.btnsearch{display: flex;justify-content: space-between;}
+.btnsearch button{width: 45%;}
+table{width: 100%;
+text-align: center;}
