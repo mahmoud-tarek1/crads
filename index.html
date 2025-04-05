@@ -3,70 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta http-equiv="refresh"content="">
-  <link rel="stylesheet" href="front.css">
+    <title>cruds</title>
+
+    <link rel="stylesheet" href="index.css">
+    
 </head>
+
 <body>
 <div class="crud">
-<div class="head">
-    <h2>crud</h2>
-    <p>prodect management system</p>
-</div>
+    <div class="head">
+        <h2>crud</h2>
+        <p>product management system</p>
+    </div>
     <div class="input">
-        <input type="text" id="title" placeholder="title">
-        <div class="price2">
-<input   onkeyup="gettotal()" type="number" id="price" placeholder="price" >
-<input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes" >
-<input onkeyup="gettotal()"  type="number" id="ads" placeholder="ads" >
-<input onkeyup="gettotal()" type="number" id="discount" placeholder="discount" >
-
-<small id="total">total</small>
-
-        </div>
-<input type="number" id="count" placeholder="count">
-<input type="text" id="category" placeholder="category">
-<button id="create">create</button>
-        
-
+ <input type="text" placeholder="title" id="title">
+ <div class="price">
+    <input onkeyup="gettotal()" type="number" id="price" placeholder="price">
+    <input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes">
+    <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads">
+    <input onkeyup="gettotal()" type="number" id="discount" placeholder="discount">
+    <small id="total"></small>
+ </div>
+ <input type="number" placeholder="count" id="count">
+ <input type="text" placeholder="category" id="category">
+ <button id="submit">create</button>
     </div>
-<div class="output">
-    <div class="search">
-        <input type="text" id="search" placeholder="search">
+    <div class="ouput">
+        <div class="search block">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
         <div class="btnsearch">
-            <button id="searchtitle">search by title</button>
-            <button id="searchcaterogy">search by category</button>
-        </div>
-            <Table>
-                <tr>
-                    <th>id</th>
-                    <th>title</th>
-                    <th>price</th>
-                    <th>taxes</th>
-                    <th>ads</th>
-                    <th>discount</th>
-                    <th>total</th>
-                    <th>category</th>
-                    <th>update</th>
-                    <th>delete</th>
-                </tr>
-                <tbody id="tbody">
-                <td><button id="update">update</button></td>
-                <td><button id="delete">delete</button></td>
-                </tbody>
-            </Table>
-        </div>
+        <button onclick="getsearchMood(this.id)" id="searchTitle">search by title</button>
+        <button onclick="getsearchMood(this.id)" id="searchCategory">search By category</button>
 
     </div>
+    <div id="deleteAll"></div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+            <tr>
+                <!--<td>1</td>
+                <td>oppo</td>
+                <td>5000</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>5050</td>
+                <td>phone</td>
+                <td><button class="update">update</button></td>
+                <td><button class="delete">delete</button></td>-->
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
 </div>
-    
-</div>
-
-
-
-
-<script src="main.js" ></script>
+<script src="index.js"></script>
 </body>
-
-
 </html>
